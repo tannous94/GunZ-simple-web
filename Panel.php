@@ -81,7 +81,7 @@ while (odbc_fetch_row($query1, $i)){
 				Secures("<br><br><br><br><br><br><br><br> Fill in all the fields");
 			}
 			
-			$query1 = odbc_exec($connect, "SELECT AID FROM $accounttable WHERE UserID = '" . $user1 . "'");
+			$query1 = odbc_exec($connect, "SELECT AID FROM $accounttable WHERE UserID = '" . $user2 . "'");
 			$count1 = num_rows($query1);
 
 			if (!$count1 >= 1)
